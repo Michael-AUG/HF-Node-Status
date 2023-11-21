@@ -17,4 +17,5 @@ echo "The node is running on HF on port $HFport. The dial frequency is $kHz kHz.
 else
 echo "The node is not currently running on HF. If you see this message please consider letting the SYSOP know - $sysopEmail"
 fi
+sleep 2
 echo "Please note the HF port of this node may be turned off without notice if the SYSOP wishes to use the HF bands for anything. It will be reactivated as soon as possible, and any messages held until this time. Thank you for your understanding"
