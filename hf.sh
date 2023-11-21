@@ -11,7 +11,7 @@ freq=$(rigctl -m2 f)
 mode=$(rigctl -m2 \get_mode | sed -n '1p')
 kHz=$(echo "scale=2; $freq/1000" | bc -l)
 
-if [ $freq -eq $nodeFreq ] && [ $mode -eq $nodeMode ]
+if [ $freq -eq $nodeFreq ] && [[ "$mode" == "$nodeMode" ]]
 then
 echo "The node is running on HF on port $HFport. The dial frequency is $kHz kHz."
 else
