@@ -1,4 +1,4 @@
-#HF-Node-Status
+# HF-Node-Status
 
 This short applet for BPQ interrogates the radio (using hamlib), checks that the radio is on the correct frequency and mode for HF packet activity, and returns either a success message (listing the dial frequency) or a failure message (suggesting the user contact the SYSOP).
 
